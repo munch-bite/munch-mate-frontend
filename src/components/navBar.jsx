@@ -6,7 +6,7 @@ const NavBar = () => {
     const [menu, setMenu] = useState("Home")
   return (
 
-    <div className='w-[80%] m-auto padding flex justify-between items-center'>
+    <div className=' padding flex justify-between items-center'>
         <img src={images.Logo} alt="" className='w-[10 rem] h-8 w-[150px]'/>
         <ul className='flex list-none gap-[20px] text-green-950 text-[18px] cursor-pointer'>
             <li  onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}>Home</li>

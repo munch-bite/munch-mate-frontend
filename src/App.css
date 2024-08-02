@@ -27,3 +27,32 @@ a{
  .header{
   background-size: contain;
  }
+
+ .exploreMenu{
+  margin: 20px 0px;
+ }
+ .exploreMenu::-webkit-scrollbar{
+  display: none;
+ }
+
+ .exploreP{
+  font-size: max(1.4vw, 16px);
+ }
+
+ .hr{
+  margin: 10px 0px;
+ }
+
+ .menu img{
+  width: 7.5vw;
+  cursor:pointer;
+  min-width: 80px;
+  border-radius: 50% ;
+  transition: 0.2s;
+ }
+ .menu .active{
+  border: 2px solid #EA7519;
+  padding: 2px;
+ }
+
+

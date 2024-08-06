@@ -2,10 +2,11 @@
  import Logo from "../images/munchlogo.png"
  import HomeImg from '../images/homeImg.png'
  import Breakfast from '../images/breakfast.png'
+ import Salad from '../images/salad.jpg'
 
 
  export const images ={
-    Favicon, Logo, HomeImg
+    Favicon, Logo, HomeImg, Salad
  }
 
 
@@ -13,7 +14,7 @@
    {menuName: "Salad",
     menuImage: Breakfast
    },
-   {menuName: "Deserts",
+   {menuName: "Desserts",
     menuImage: Breakfast
    },
    {menuName: "Breakfast",
@@ -25,35 +26,123 @@
    {menuName: "Pizzas",
     menuImage: Breakfast
    },
-   {menuName: "Noodles",
+   {menuName: "Locals",
     menuImage: Breakfast
    },
-   {menuName: "Pizzas",
+   {menuName: "Chinese",
     menuImage: Breakfast
    },
-   {menuName: "Noodles",
+   {menuName: "Rolls",
     menuImage: Breakfast
    },
-   {menuName: "Pizzas",
+   {menuName: "Indian",
     menuImage: Breakfast
    },
-   {menuName: "Noodles",
-    menuImage: Breakfast
-   },
-   {menuName: "Pizzas",
-    menuImage: Breakfast
-   },
-   {menuName: "Pizzas",
+   {menuName: "Burger",
     menuImage: Breakfast
    },
 
-   {menuName: "Pizzas",
+   {menuName: "Bakes",
     menuImage: Breakfast
-   },{menuName: "Pizzas",
+   },
+   
+   {menuName: "Vegan",
     menuImage: Breakfast
    },
 
-   {menuName: "Pizzas",
-    menuImage: Breakfast
-   }
+ 
+ ]
+
+ export const foodList = [
+  {id: "1",
+  name: "Greek Salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+  {id: "2",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+  {id: "3",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+  {id: "4",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+  {id: "5",
+  name: "Pepperoni",
+  image: Salad,
+  price: "25",
+  category:"Pizzas",
+  description: "Vegan dish"
+},
+  {id: "6",
+  name: "Indomie",
+  image: Salad,
+  price: "25",
+  category:"noodles",
+  description: "Vegan dish"
+},
+  {id: "7",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+  {id: "8",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+  {id: "9",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+{id: "10",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+{id: "11",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+{id: "12",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
+{id: "13",
+  name: "Greek salad",
+  image: Salad,
+  price: "25",
+  category:"Salad",
+  description: "Vegan dish"
+},
  ]

@@ -23,7 +23,63 @@ a{
 .padding .active{
   padding-bottom: 2px;
   border-bottom: 2px solid green;
+  
 }
+
+@media (max-width:1050px){
+  .padding .logo{
+    width: 140px;
+  }
+  .padding-menu{
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .padding-right{
+    gap:30px
+  }
+
+  .img {
+    width: 30px;
+  }
+
+  .padding-right button{
+    padding: 8px 25px;
+  }
+}
+
+@media (max-width:900px){
+  .padding .logo{
+    width: 120px;
+  }
+  .padding-menu{
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .img {
+    width: 20px;
+  }
+
+  .padding-right{
+    gap:20px
+  }
+  .padding-right button{
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width:750px){
+ 
+  .padding-menu{
+   display: none;
+  }
+
+ 
+}
+
+
  .header{
   background-size: contain;
  }
@@ -118,4 +174,9 @@ a{
 .footerContent li, .footerContentRight li{
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.login-container{
+  width: max(23vw,330px);
+  padding: 25px 30px;
 }

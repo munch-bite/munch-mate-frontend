@@ -4,7 +4,7 @@ import { Facebook, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="footer flex text-gray-200 bg-slate-400 flex-col items-center gap-[20px] pt-[80px] mt-[100px]">
+    <div className="footer flex text-gray-200 bg-[#323232] flex-col items-center gap-[20px] pt-[80px] mt-[100px]">
       <div className="footerContent w-[100%] grid">
         <div className="footerContentLeft flex flex-col items-start gap-[20px]">
           <img src={images.Logo} alt="Logo" className="h-8 w-[150px] gap-[80px]"/>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
 
-    <hr className="w-[100%] h-[2px] mx-[20px] my-[0px] border-none bg-gray-800"/>
+    <hr className="w-[100%] h-[2px] mx-[20px] my-[0px] border-none bg-gray-500"/>
       <p className="copyright">
         Copyright 2024 @ munchmate.com - All Rights Reserved.
       </p>

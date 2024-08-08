@@ -14,11 +14,11 @@ function App() {
   {path :'/',
   element : <Landing/>},
   {
-    path :'/cart',
+    path :'cart',
     element : <Cart/> 
   },
   {
-    path :'/place/order',
+    path :'place/order',
   element : <PlaceOrder/>
   }
 

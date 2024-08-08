@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { images } from '../assets/images'
 import { Search, ShoppingBasket } from 'lucide-react'
+import { Link } from 'react-router-dom';
 
 const NavBar = ({setShowLogin}) => {
     const [menu, setMenu] = useState("Home")

@@ -193,3 +193,36 @@ a{
   font-weight: 500;
   cursor: pointer;
 }
+.cart-title{
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  font-size: max(1vw,12px);
+}
+
+.cart-items-item{
+  margin: 10px 0px;
+}
+
+.cart-bottom{
+  gap: max(12vw,20px);
+}
+.cart-total hr{
+  margin: 10px 0;
+}
+.cart-total button{
+  width: max(15vw,200px);
+  padding: 12px 0px;
+}
+
+.promocode-input button{
+  width: max(10vw,150px);
+  padding: 12px 5px;
+}
+
+@media (max-width:750px){
+  .cart-bottom{
+    flex-direction: column-reverse;
+  }
+  promocode{
+    justify-content: start;
+  }
+}

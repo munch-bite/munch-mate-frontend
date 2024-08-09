@@ -105,7 +105,6 @@ const Socials = () => {
     </button>
   </div>
 </div>
-
   )
 }
 

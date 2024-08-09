@@ -1,6 +1,7 @@
 import React from "react";
 import { images } from "../assets/images";
 import { Facebook, Twitter, Youtube } from "lucide-react";
+import Socials from "./socials";
 
 const Footer = () => {
   return (
@@ -8,11 +9,9 @@ const Footer = () => {
       <div className="footerContent w-[100%] grid">
         <div className="footerContentLeft flex flex-col items-start gap-[20px]">
           <img src={images.Logo} alt="Logo" className="h-8 w-[150px] gap-[80px]"/>
-          <p>its okay to buy what you feek like eating</p>
+          <p>"Craving something delicious? You're just a click away <br/> with MunchMate. Order now and satisfy your taste buds!"</p>
           <div className="socialIcons w-[40px] mr-[15px]">
-            <Facebook />
-            <Twitter />
-            <Youtube />
+            <Socials/>
           </div>
         </div>
         <div className="footerContentCenter flex flex-col items-start gap-[20px]">

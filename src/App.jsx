@@ -14,7 +14,7 @@ function App() {
   {path :'/',
   element : <Landing/>},
   {
-    path :'cart',
+    path :'/cart',
     element : <Cart/> 
   },
   {

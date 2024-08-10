@@ -1,11 +1,10 @@
 import React from "react";
 import { images } from "../assets/images";
-import { Facebook, Twitter, Youtube } from "lucide-react";
 import Socials from "./socials";
 
 const Footer = () => {
   return (
-    <div className="footer flex text-gray-200 bg-[#323232] flex-col items-center gap-[20px] pt-[80px] mt-[100px]">
+    <div className="footer flex text-gray-200 bg-[#323232] flex-col items-center gap-[20px] pt-[80px] mt-[100px]" id="footer" >
       <div className="footerContent w-[100%] grid">
         <div className="footerContentLeft flex flex-col items-start gap-[20px]">
           <img src={images.Logo} alt="Logo" className="h-8 w-[150px] gap-[80px]"/>

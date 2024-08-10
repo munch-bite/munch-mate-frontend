@@ -49,12 +49,12 @@ const Cart = () => {
             <hr />
             <div className="total-details flex justify-between text-[#555]">
               <p>Delivery Fee</p>
-              <p>${2}</p>
+              <p>${getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr />
             <div className="total-details flex justify-between text-[#555]">
               <b>Total</b>
-              <b>${getTotalCartAmount()+2}</b>
+              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
             </div>
           </div>
           <button className="border-none bg-[#EA7519] cursor-pointer text-white rounded-[4px]" onClick={()=>navigate('/place/order')}>PROCEED TO CHECKOUT</button>

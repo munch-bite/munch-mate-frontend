@@ -15,8 +15,8 @@ const NavBar = ({ setShowLogin }) => {
       </Link>
       <ul className='padding-menu flex list-none gap-[20px] text-green-950 text-[18px] cursor-pointer'>
       <Link to='/'><li onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}>Home</li></Link>
-        <li onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</li>
-        <li onClick={() => setMenu("Contact-Us")} className={menu === "Contact-Us" ? "active" : ""}>Contact-Us</li>
+        <li onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}><a href="#exploreMenu"> Menu</a></li>
+         <li onClick={() => setMenu("Contact-Us")} className={menu === "Contact-Us" ? "active" : ""}><a href='#footer'>Contact-Us</a></li>
       </ul>
       <div className='padding-right flex items-center gap-[40px]'>
         <Search className='img' />

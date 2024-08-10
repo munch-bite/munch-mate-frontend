@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import NavBar from "../components/navBar";
 import Footer from "../components/footer";
 import { useState } from "react";
+import LoginPop from "../components/loginPop";
 
 const RootLayout = () => {
   const [showLogin, setShowLogin] = useState(false);

@@ -111,8 +111,7 @@ a{
   padding: 2px;
  }
 
- /* rating */
-/* From Uiverse.io by PriyanshuGupta28 */ 
+
 .rating {
   display: inline-block;
 }
@@ -225,4 +224,51 @@ a{
   promocode{
     justify-content: start;
   }
+}
+
+.place-order-left{
+  max-width: max(30%, 500px);
+}
+
+.place-order-left input{
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  outline-color: #EA7519;
+}
+
+.place-order-right{
+  max-width: max(40%,500px);
+}
+
+.navbar{
+  padding: 8px, 4%;
+}
+
+.Logo{
+  width: max(10%, 80px);
+}
+
+.sidebar{
+  border: 1.5px solid #a9a9a9;
+  font-size: max(1vw, 10px);
+}
+
+.sidebar-option{
+  border: 1px solid #a9a9a9;
+  padding: 8px 10px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+@media(max-width: 900px){
+  .sidebar-option p{
+    display: none;
+  }
+}
+
+.sidebar-option.active{
+  background-color: #fff0ed;
+  border-color: #EA7519;
 }

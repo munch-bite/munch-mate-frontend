@@ -34,7 +34,7 @@ function App() {
       children: [
         {
           index: true,
-          element:<VendorPage />,
+          element:<Orders />,
         },
         {
           path: "add",
@@ -46,7 +46,7 @@ function App() {
         },
         {
           path: "orders",
-          element: <Orders />,
+          element:<Orders /> ,
         }
       ],
     },

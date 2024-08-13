@@ -1,30 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import upload from '../../assets/images/upload.png'
 import upload1 from '../../assets/images/upload-icon.png'
 
+
+
+
 const Add = () => {
+  const [image, setImage] = useState(false);
+  const [data, setData] = useState({
+    name:"",
+    description:"",
+    price:"",
+    category:"Salad"
+  })
+
+  const onChangeHandler =(event)=>{
+const name = event.target.name;
+const value =event.target.value;
+setData(data=>({...data,[name]:value}))
+  }
+
+  // const onSubmitHandler = async(event)=>{
+  //   event.preventDefault();
+  //   const formData = new FormData();
+  //   formData.append("name", data.name)
+  //   formData.append("description", data.description)
+  //   formData.append("price", Number(data.price))
+  //   formData.append("category", data.category)
+  //   formData.append("image", image)
+
+  // }
+
   return (
-    <div className='add'>
-       <form className='flexcol'>
-        <div className='add-img-upload flexcol'>
+    <div className='add w-[70%] mt-[50px] text-[#6d6d6d] text-[16px] pb-10'>
+       <form className='flexcol gap-[20px]' > 
+        {/* onSubmit={onSubmitHandler} */}
+        <div className='add-img-upload flexcol w-[120px]'>
           <p>Upload Image</p>
           <label htmlFor="image">
-            <img src={upload1} alt="upload icon" className='size-[30px]'/>
+            <img src={image?URL.createObjectURL(image):upload1} alt="upload icon" className='size-fit'/>
           </label>
-          <input type="file" id='image' hidden required />
+          <input onChange={(e)=>setImage(e.target.files[0])} type="file" id='image' hidden required />
         </div>
-        <div className="add-product-name flexcol">
+        <div className="add-product-name flexcol ">
           <p>Product Name</p>
-          <input type="text" name='name' placeholder='Type here'/>
+          <input onChange={onChangeHandler} value={data.name} type="text" name='name' placeholder='Type here' className='p-[10px]'/>
         </div>
-        <div className="add-prpduct-description">
-          <p>Product Description</p>
-          <textarea name="description" placeholder="Write content here" rows="6" required></textarea>
+        <div className="add-product-description">
+          <p className='pb-3'>Product Description</p>
+          <textarea onChange={onChangeHandler} value={data.description} name="description" placeholder="Write content here" rows="6" required className='p-[10px]'></textarea>
         </div>
-        <div className="add-category-price">
-          <div className="add-category flexcol">
+        <div className="add-category-price flex gap-[30px]">
+          <div className="add-category flexcol ">
             <p>Product category</p>
-            <select name="category">
+            <select name="category" className='p-[10px] max-w-[120px] ' onChange={onChangeHandler}>
               <option value="Salad">Salad</option>
               <option value="Rolls">Rolls</option>
               <option value="Desserts">Desserts</option>
@@ -42,10 +71,10 @@ const Add = () => {
           </div>
           <div className="add-price flexcol">
             <p>Product price</p>
-            <input type="Number" name='price' placeholder='$20'  />
+            <input onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='$20' className='p-[10px] max-w-[120px] ' />
           </div>
         </div>
-        <button type='submit' className='add-button'>ADD</button>
+        <button type='submit' className='add-button max-w-[120px] border-none bg-black text-white cursor-pointer p-[10px]'>ADD</button>
        </form>
     </div>
   )

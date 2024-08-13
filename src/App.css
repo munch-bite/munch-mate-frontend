@@ -272,3 +272,17 @@ a{
   background-color: #fff0ed;
   border-color: #EA7519;
 }
+
+.add{
+  margin-left: max(5vw,25px);
+}
+
+.flexcol{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-product-name, .add-product-description{
+  width: max(40%,280px);
+}

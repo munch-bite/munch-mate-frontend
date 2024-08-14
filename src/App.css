@@ -269,13 +269,11 @@ a{
 }
 
 .sidebar-option.active{
-  background-color: #fff0ed;
+  background-color: #FFF7ED;
   border-color: #EA7519;
 }
 
-.add{
-  margin-left: max(5vw,25px);
-}
+
 
 .flexcol{
   display: flex;

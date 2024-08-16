@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { StoreContext } from '../../assets/context/storeContext'
+import { Link } from 'react-router-dom'
 
 const PlaceOrder = () => {
   const {getTotalCartAmount} = useContext(StoreContext)
@@ -29,20 +30,20 @@ const PlaceOrder = () => {
           <div>
           <div className="total-details flex justify-between text-[#555]">
               <p>Subtotal</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>GH₵{getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="total-details flex justify-between text-[#555]">
               <p>Delivery Fee</p>
-              <p>${getTotalCartAmount()===0?0:2}</p>
+              <p>GH₵{getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr />
             <div className="total-details flex justify-between text-[#555]">
               <b>Total</b>
-              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+              <b>GH₵{getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
             </div>
           </div>
-          <button className="border-none bg-[#EA7519] cursor-pointer text-white rounded-[4px] mt-[30px]">PROCEED TO PAYMENT</button>
+          <Link to="/payment"> <button className="border-none bg-[#EA7519] cursor-pointer text-white rounded-[4px] mt-[30px]">PROCEED TO PAYMENT</button></Link>
         </div>
     </div>
    </form>

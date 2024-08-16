@@ -57,6 +57,7 @@
   {id: "1",
   name: "Greek Salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -64,6 +65,7 @@
   {id: "2",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -71,6 +73,7 @@
   {id: "3",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -78,6 +81,7 @@
   {id: "4",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -85,6 +89,7 @@
   {id: "5",
   name: "Pepperoni",
   image: Salad,
+  vendor: "Pizza Hut",
   price: "25",
   category:"Pizzas",
   description: "Vegan dish"
@@ -92,6 +97,7 @@
   {id: "6",
   name: "Indomie",
   image: Salad,
+  vendor: "House of Pasta",
   price: "25",
   category:"noodles",
   description: "Vegan dish"
@@ -99,6 +105,7 @@
   {id: "7",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -106,6 +113,7 @@
   {id: "8",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -113,6 +121,7 @@
   {id: "9",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -120,6 +129,7 @@
 {id: "10",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -127,6 +137,7 @@
 {id: "11",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -134,6 +145,7 @@
 {id: "12",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"
@@ -141,6 +153,7 @@
 {id: "13",
   name: "Greek salad",
   image: Salad,
+  vendor: "Food Boutique",
   price: "25",
   category:"Salad",
   description: "Vegan dish"

@@ -8,6 +8,11 @@ import VendorPage from "./pages/Vendors";
 import Add from "./pages/Vendors/add";
 import List from "./pages/Vendors/list";
 import Orders from "./pages/Vendors/orders";
+import UserPage from "./pages/users";
+import OrderMenu from "./pages/users/orderMenu";
+import UserOrders from "./pages/users/userOrders";
+import Payment from "./pages/payment";
+import Store from "./pages/store";
 function App() {
   const router = createBrowserRouter([
     {
@@ -26,6 +31,16 @@ function App() {
           path: "place/order",
           element: <PlaceOrder />,
         },
+        {
+          path: "/payment",
+          element:<Payment /> ,
+        },
+        {
+          path: "store",
+          element:<Store /> ,
+        }
+       
+        
       ],
     },
     {
@@ -44,9 +59,24 @@ function App() {
           path: "list",
           element: <List />,
         },
+        
+      ],
+    },
+    {
+      path: "user",
+      element: <UserPage />,
+      children: [
         {
-          path: "orders",
-          element:<Orders /> ,
+          index: true,
+          element:<OrderMenu/>
+        },
+        {
+          path: "menu",
+          element: <OrderMenu/>
+        },
+        {
+          path: "user/orders",
+          element:<UserOrders/>
         }
       ],
     },

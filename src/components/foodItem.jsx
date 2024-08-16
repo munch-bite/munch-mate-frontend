@@ -3,7 +3,7 @@ import Rating from './rating'
 import {MinusCircle, Plus, PlusCircle} from 'lucide-react'
 import { StoreContext } from '../assets/context/storeContext';
 
-const FoodItem = ({id,name,price,description,image}) => {
+const FoodItem = ({id,name,price,description,image,vendor}) => {
     const {cartItems, addToCart, removeFromCart}= useContext(StoreContext);
   return (
     <div className='foodItem w-[100%] m-auto rounded-[15px] '>
@@ -20,13 +20,14 @@ const FoodItem = ({id,name,price,description,image}) => {
             }
         </div>
         <div className='foodItemInfo p-[20px]'>
+        <p className="foodItemDesc text-[#EA7519] text-[14px] mt-[-10px] pl-[5rem]">{vendor}</p>
             <div className='foodItemRating flex justify-between items-center mb-[10px]'>
                 <p className='text-[20px] font-medium'>{name}</p>
                 <Rating className="w-[70px]"/>
 
             </div>
             <p className="foodItemDesc text-gray-500 text-[17px]">{description}</p>
-            <p className="foodItemPrice text-[22px] text-[#EA7519] font-medium">${price}</p>
+            <p className="foodItemPrice text-[22px] text-[#EA7519] font-medium">GH₵{price}</p>
         </div>
 
     </div>

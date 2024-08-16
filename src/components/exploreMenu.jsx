@@ -4,7 +4,7 @@ import { menuList } from '../assets/images'
 const ExploreMenu = ({category, setCategory}) => {
   return (
     <div className='flex flex-col gap-[20px]' id='exploreMenu'>
-<h1 className='font-medium'>Explore our Menu</h1>
+<h1 className='font-medium'>Explore different dishes</h1>
 <p className='max-w-[60%]'>Choose from a diverse menu featuring local and continental dishes</p>
 <div className='flex justify-between items-center gap-[30px] text-center  overflow-x-scroll exploreMenu'>
 {menuList.map((item, index)=>{

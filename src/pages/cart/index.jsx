@@ -28,7 +28,7 @@ const Cart = () => {
                 <p>{item.name}</p>
                 <p>${item.price}</p>
                 <p>{cartItems[item.id]}</p>
-                <p>${item.price*cartItems[item.id]}</p>
+                <p>GH₵{item.price*cartItems[item.id]}</p>
                 <CircleX onClick={()=>removeFromCart(item.id)} className="cursor-pointer"/>
               </div>
               <hr className="h-[1px] bg-[#e2e2e2] border-none"/>
@@ -44,17 +44,17 @@ const Cart = () => {
           <div>
             <div className="total-details flex justify-between text-[#555]">
               <p>Subtotal</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>GH₵{getTotalCartAmount()}</p>
             </div>
             <hr />
             <div className="total-details flex justify-between text-[#555]">
               <p>Delivery Fee</p>
-              <p>${getTotalCartAmount()===0?0:2}</p>
+              <p>GH₵{getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr />
             <div className="total-details flex justify-between text-[#555]">
               <b>Total</b>
-              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+              <b>GH₵{getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
             </div>
           </div>
           <button className="border-none bg-[#EA7519] cursor-pointer text-white rounded-[4px]" onClick={()=>navigate('/place/order')}>PROCEED TO CHECKOUT</button>

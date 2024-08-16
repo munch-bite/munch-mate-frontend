@@ -58,7 +58,7 @@ const Add = () => {
             </div>
             <div className="add-price flex-col flex-1">
               <p className=' text-gray-700 font-semibold '>Product Price</p>
-              <input onChange={onChangeHandler} value={data.price} type="number" name='price' placeholder='$20' className='p-3 border border-gray-300 rounded-md shadow focus:ring focus:ring-orange-200 transition-all outline-none' />
+              <input onChange={onChangeHandler} value={data.price} type="number" name='price' placeholder='GH₵ 20' className='p-3 border border-gray-300 rounded-md shadow focus:ring focus:ring-orange-200 transition-all outline-none' />
             </div>
           </div>
         </div>

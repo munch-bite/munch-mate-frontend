@@ -59,6 +59,10 @@ function App() {
           path: "list",
           element: <List />,
         },
+        {
+          path: "orders",
+          element: <Orders/>
+        }
         
       ],
     },

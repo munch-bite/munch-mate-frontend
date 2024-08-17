@@ -1,6 +1,5 @@
 import React from "react";
-import breakfast from "../../assets/images/lasagna.jpeg";
-import { Trash2 } from "lucide-react";
+
 import FoodTile from "../../components/foodTile";
 
 const List = () => {

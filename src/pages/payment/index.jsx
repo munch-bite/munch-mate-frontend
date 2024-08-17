@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import voda from "../../assets/images/voda.webp"
+import mtn from "../../assets/images/mtn.jpg"
+import telecel from "../../assets/images/telecel.png"
 
 const Payment = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -42,6 +45,13 @@ const Payment = () => {
       >
         Pay GH₵ 30
       </button>
+
+
+      <div className='flex gap-x-10'>
+        <img src={voda} alt=""  className='w-[6rem] h-[4rem]'/>
+        <img src={mtn} alt=""  className='w-[4rem] h-[4rem]'/>
+        <img src={telecel} alt=""  className='w-[6rem] h-[4rem]'/>
+      </div>
     </div>
   );
 };

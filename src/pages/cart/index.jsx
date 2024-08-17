@@ -26,7 +26,7 @@ const Cart = () => {
                 <div className="cart-title cart-items-item grid items-center text-black">
                 <img src={item.image} alt="" className="w-[50px]"/>
                 <p>{item.name}</p>
-                <p>${item.price}</p>
+                <p>GH₵{item.price}</p>
                 <p>{cartItems[item.id]}</p>
                 <p>GH₵{item.price*cartItems[item.id]}</p>
                 <CircleX onClick={()=>removeFromCart(item.id)} className="cursor-pointer"/>
